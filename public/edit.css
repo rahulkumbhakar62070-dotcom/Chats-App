@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ece5dd;
+    padding:40px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+}
+
+.chat-card{
+    background:#fff;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+h1{
+    text-align:center;
+    color:#075e54;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.chat-id{
+    background:#f5f5f5;
+    border-left:5px solid #25D366;
+    padding:12px 15px;
+    border-radius:8px;
+    margin-bottom:20px;
+    word-break:break-word;
+}
+
+.chat-details{
+    background:#fafafa;
+    border-radius:10px;
+    padding:18px;
+    margin-bottom:25px;
+    border:1px solid #e5e5e5;
+}
+
+.chat-details p{
+    margin-bottom:12px;
+    font-size:16px;
+    color:#333;
+}
+
+.chat-details p:last-child{
+    margin-bottom:0;
+}
+
+.chat-details strong{
+    color:#075e54;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#075e54;
+}
+
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    resize:vertical;
+    min-height:150px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+textarea:focus{
+    border-color:#25D366;
+    box-shadow:0 0 8px rgba(37,211,102,.25);
+}
+
+button{
+    width:100%;
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#128C7E;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(18,140,126,.3);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .chat-card{
+        padding:22px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .subtitle{
+        font-size:15px;
+    }
+
+    .chat-details p{
+        font-size:15px;
+    }
+
+    textarea{
+        font-size:15px;
+        min-height:130px;
+    }
+
+    button{
+        font-size:15px;
+        padding:12px;
+    }
+
+}

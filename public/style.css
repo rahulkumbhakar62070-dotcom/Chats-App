@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ece5dd;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #075e54;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* New Chat Button */
+button {
+    display: block;
+    margin: 0 auto 30px;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(18, 140, 126, .3);
+}
+
+button:active {
+    transform: scale(.97);
+}
+
+.chat {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+    transition: .3s;
+}
+
+.chat:hover {
+    transform: translateY(-5px);
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.from {
+    color: #075e54;
+}
+
+.to {
+    color: #128c7e;
+}
+
+.msg {
+    background: #dcf8c6;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.chat-footer {
+    text-align: right;
+    color: gray;
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .chat-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .msg {
+        font-size: 16px;
+    }
+
+}
+
+/* add time part-6 */
+.chat-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* add edit btn */
+.chat-actions {
+    display: flex;
+    justify-content: flex-end;
+    /* Right side */
+    margin-top: 12px;
+}
+
+.chat-actions form {
+    margin: 0;
+}
+
+.edit-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #8ddef2;
+    color: rgb(85, 83, 83);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: #46adc5;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-btn {
+    background: #dc3545;
+    padding: 6px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #b02a37;
+}
+
+.chat-actions1 {
+    display: flex;
+    justify-content: flex-end;
+    /* Right side */
+    /* margin-top: 12px; */
+    
+}

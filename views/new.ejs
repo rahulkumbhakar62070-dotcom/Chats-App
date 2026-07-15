@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Chat</title>
+    <link rel="stylesheet" href="/new.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="chat-card">
+
+            <h1>Create New Chat</h1>
+            <p class="subtitle">
+                Fill in the details below to create a new chat.
+            </p>
+
+            <form method="post" action="/chats">
+
+                <div class="input-group">
+                    <label for="from">Sender</label>
+                    <input
+                        type="text"
+                        id="from"
+                        name="from"
+                        placeholder="Who are you?"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="msg">Message</label>
+                    <textarea
+                        id="msg"
+                        name="msg"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="to">Receiver</label>
+                    <input
+                        type="text"
+                        id="to"
+                        name="to"
+                        placeholder="Add receiver"
+                        required
+                    >
+                </div>
+
+                <button type="submit">
+                    Create Chat
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
